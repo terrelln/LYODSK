@@ -1,5 +1,5 @@
 getopt: getopt.cpp
-	g++ getopt.cpp -o getopt
+	g++ -std=c++11 getopt.cpp -o getopt
 
 .PHONY: clean
 clean:

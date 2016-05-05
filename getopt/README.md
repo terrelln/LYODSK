@@ -7,5 +7,5 @@ To see it in action, run the commands
 make getopt
 ./getopt -a -b hello
 ./getopt -aaaaa --optionA --optionB world -b baz
-./betopt -ab world --optionA --optionB hello -optionB world -aaab lol
+./getopt -ab world --optionA --optionB hello -optionB world -aaab lol
 ```
