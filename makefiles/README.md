@@ -22,12 +22,12 @@ make
 This should show you why object files are useful in large projects.
 We can also build the object files by hand:
 
-``
+```
 make clean
 make print.o
 make main.o
 make
-``
+```
 
 Now observe the flags used for compilation for the different targets.
 

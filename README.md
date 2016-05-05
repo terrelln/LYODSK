@@ -10,3 +10,15 @@ The topics covered are:
 * valgrind
 
 Each topic is in its own folder with its own README, please explore at your leisure.
+
+## Downloading
+
+To download this repo, first ssh into CAEN.
+Then go to whatever directory you want this repo in.
+Now run:
+
+```
+git clone https://github.com/terrelln/LYODSK.git
+```
+
+Now you're all set!
