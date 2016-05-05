@@ -17,7 +17,9 @@ Once in gdb, run the following commands:
 run        # Runs the executable `./bug1`, it will segfault and you will get control back.
 bt         # Shows you the stack trace at the point of the segfault
 up         # Unwinds the stack one level
-up         # Running it 4 times will get you into user code
+up         # Running it 6 times will get you into user code
+up
+up
 up
 up
 print vec  # Prints the variable vec, we see it has 6 elements.
@@ -40,24 +42,24 @@ gdb ./bug2
 Once in geb, run the following commands:
 
 ```
-break gdb_bug2:18   # Set a breakpoing in file gdb_bug2 at line 18
-run                 # Run the executable
-print v             # Print the vector v
-print i             # Print the loop variable i
-continue            # Continue running the program until the next breakpoing
-print v
-print i
-continue
-continue
-continue
-continue
-continue
-print v
-print i
-continue            # We are now in the iteration where the segfault happens
-print v             # Look at the vector
-print i             # and the loop variable
-step                # Step through the erase command, this will cause the segfault
+break gdb_bug2.cpp:18   # Set a breakpoing in file gdb_bug2.cpp at line 18
+run                     # Run the executable
+print v                 # Print the vector v
+print i                 # Print the loop variable i
+continue                # Continue running the program until the next breakpoing
+p v                     # Shorter version of print
+p i
+c                       # Shorter version of continue
+c
+c
+c
+c
+p v
+p i
+c                       # We are now in the iteration where the segfault happens
+p v                     # Look at the vector
+p i                     # and the loop variable
+next                    # Execute the erase command, which will cause a segfault
 ```
 
 Now you can use gdb to debug your projects.
