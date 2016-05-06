@@ -28,7 +28,7 @@ With the advent of C++14, you should be using `std::unique_ptr`, and should neve
 ## Segfault Checking
 
 Now, we will look ast valgrinds bad memory access detection.
-Look at `valgrind.cpp`, and you will see that it accesses the vector beyond the last element.
+Look at `main.cpp`, and you will see that it accesses the vector beyond the last element.
 Run the command:
 
 ```
